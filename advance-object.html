@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-">
+<title> Hr File </title>
+<script>
+
+//Namspace 
+var ayat = {};
+ayat.car = {
+	brand : "BMW",
+	price : 15000,
+	quantity : 2,
+	totalPrice : function(){
+		return this.price * this.quantity;
+	},
+	stores : ["Delhi","Noida","Gurgaon"],
+	address : {
+		plotNo : "1205",
+		town : "Haryana",
+		country : "India"
+	}
+}
+
+
+document.write("Hi I have "+ayat.car.quantity+" "+ayat.car.brand+" car, i just bought it in "+ayat.car.totalPrice()+" . I purchased from "+ayat.car.stores[0]+" and i will repear it head branch "+ ayat.car.address.plotNo+" "+ ayat.car.address.town);
+
+</script>
+
+<body>
+
+</body>
+</html>
